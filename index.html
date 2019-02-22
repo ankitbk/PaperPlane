@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PaperPlane</title>
+    <link type="text/css" rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+    <!-- /////////// main style and folder structure can be found in main.scss //////////////////-->
+<body>
+    <!-- /////////// main-header //////////////////  css can be found in layout/header-->
+    <header>
+        <div class="container-full">
+            <nav class="main-menu">
+                <div class="sidemenu-left">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="#"><i class="fas fa-compass"></i>Shop</a></li>
+                        <li><a href="#"><i class="fas fa-star"></i>Featured</a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <img src="./images/Paperplane logo.png" alt="">
+                </div>
+                <div class="sidemenu-right">
+                    <ul>
+                        <li class="searchBox">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="search">
+                        </li>
+                        <li>
+                            <a href="#" class="logBtn">Log In</a>
+                        </li>
+                        <li>
+                            <a href="#" class="logBtn">Join</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="main-menu-1">
+                <div class="logo">
+                    <img src="./images/Paperplane logo.png" alt="">
+                </div>
+                <div class="sidemenu-right">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="#"><i class="fas fa-compass"></i>Shop</a></li>
+                        <li><a href="#"><i class="fas fa-star"></i>Featured</a></li>
+                        <li>
+                            <a href="#" class="logBtn">Log In</a>
+                            <a href="#" class="logBtn">Join</a>
+                        </li>
+                        <li class="searchBox">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="search">
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-toggle">
+                    <div class="hamburger"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- //////////////sub-header/////////////////// css can be found in layout/form-->
+    <section id="form">
+        <div class="container-full">
+            <div class="popupadd">
+                <h3>Canopy is Amazon, curated</h3>
+                <i class="far fa-times-circle"></i>
+            </div>
+            <div class="sub-header">
+                <ul>
+                    <li><a href="#">Learn about Canopy</a></li>
+                    <li><a href="#">Find great gift</a></li>
+                    <li><a href="#">Join to save product</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //////////////productGrid/////////////////// css can be found in layout/flexgrid-->
+    <section id="productgrid">
+        <div class="container">
+            <div class="filterbtn">
+                <a href="#">Trending</a>
+                <a href="#">New</a>
+                <a href="#">Most popular</a>
+            </div>
+            <div class="itmContainer">
+                <div class="Items">
+                    <div class="item">
+                        <div class="main">
+                            <div class="ImageContainer">
+                                <img src="./images/1_.jpg" alt="">
+                                <!--///////// Image-overlay-Start /////////////-->
+                                <div class="itemdetails">
+                                    <div class="lefIcon">
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Heritage, Grey</h5>
+                                        <p>By HERSCHEL SUPPLY CO.</p>
+                                    </div>
+                                </div>
+                                <!-- ///////////Image-overlay-End////////// -->
+                            </div>
+                            <div class="rightIcon"><i class="fas fa-check"></i>$35</div>
+                            <div class="userIcons">
+                                <img src="./images/person-min.jpg" alt="">
+                                <p>+4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Items">
+                    <div class="item">
+                        <div class="main">
+                            <div class="ImageContainer">
+                                <img src="./images/7.jpg" alt="">
+                                <!--///////// Image-overlay-Start /////////////-->
+                                <div class="itemdetails">
+                                    <div class="lefIcon">
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Heritage, Grey</h5>
+                                        <p>By HERSCHEL SUPPLY CO.</p>
+                                    </div>
+                                </div>
+                                <!-- ///////////Image-overlay-End////////// -->
+                            </div>
+                            <div class="rightIcon btn"><i class="fas fa-check"></i>$55</div>
+                            <div class="userIcons">
+                                <img src="./images/person-min.jpg" alt="">
+                                <img src="./images/person-min.jpg" alt="">
+                                <p>+7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Items">
+                    <div class="item">
+                        <div class="main">
+                            <div class="ImageContainer">
+                                <img src="./images/3.jpg" alt="">
+                                <!--///////// Image-overlay-Start /////////////-->
+                                <div class="itemdetails">
+                                    <div class="lefIcon">
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Heritage, Grey</h5>
+                                        <p>By HERSCHEL SUPPLY CO.</p>
+                                    </div>
+                                </div>
+                                <!-- ///////////Image-overlay-End////////// -->
+                            </div>
+                            <div class="rightIcon btn">$18</div>
+                            <div class="userIcons">
+                                <img src="./images/person-min.jpg" alt="">
+                                <p>+11</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Items">
+                    <div class="item">
+                        <div class="main">
+                            <div class="ImageContainer">
+                                <img src="./images/4.jpg" alt="">
+                                <!--///////// Image-overlay-Start /////////////-->
+                                <div class="itemdetails">
+                                    <div class="lefIcon">
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Heritage, Grey</h5>
+                                        <p>By HERSCHEL SUPPLY CO.</p>
+                                    </div>
+                                </div>
+                                <!-- ///////////Image-overlay-End////////// -->
+                            </div>
+                            <div class="rightIcon btn"><i class="fas fa-check"></i>$8</div>
+                            <div class="userIcons">
+                                <img src="./images/person-min.jpg" alt="">
+                                <p>+6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Items">
+                    <div class="item">
+                        <div class="main">
+                            <div class="ImageContainer">
+                                <img src="./images/5.jpg" alt="">
+                                <!--///////// Image-overlay-Start /////////////-->
+                                <div class="itemdetails">
+                                    <div class="lefIcon">
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Heritage, Grey</h5>
+                                        <p>By HERSCHEL SUPPLY CO.</p>
+                                    </div>
+                                </div>
+                                <!-- ///////////Image-overlay-End////////// -->
+                            </div>
+                            <div class="rightIcon btn"><i class="fas fa-check"></i>$5</div>
+                            <div class="userIcons">
+                                <img src="./images/person-min.jpg" alt="">
+                                <p>+10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Items">
+                    <div class="item">
+                        <div class="main">
+                            <div class="ImageContainer">
+                                <img src="./images/6.jpg" alt="">
+                                <!--///////// Image-overlay-Start /////////////-->
+                                <div class="itemdetails">
+                                    <div class="lefIcon">
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Heritage, Grey</h5>
+                                        <p>By HERSCHEL SUPPLY CO.</p>
+                                    </div>
+                                </div>
+                                <!-- ///////////Image-overlay-End////////// -->
+                            </div>
+                            <div class="rightIcon btn">$130</div>
+                            <div class="userIcons">
+                                <img src="./images/person-min.jpg" alt="">
+                                <p>+18</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //////////////////functionality for humber and popupAdd/////////////// -->
+    <script>
+        $(document).ready(function(){
+            $('.menu-toggle').click(function () {
+                 $(this).toggleClass('open');
+                $('.sidemenu-right').toggleClass('displaynone');
+            });
+
+            $('.fa-times-circle').click(function () {
+                console.log("1");
+                $(this).parent().remove();
+            });
+        });
+    </script>
+</body>
+</html>

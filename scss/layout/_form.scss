@@ -1,0 +1,50 @@
+#form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $base-color;
+    text-align: center;
+}
+
+.popupadd {
+
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: $primary-black 1px solid;
+    color: $primary-black;
+}
+
+.sub-header ul{
+    // border-top: $primary-black 1px solid;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center; 
+    
+    li:not(:last-of-type) {
+        padding: 0 10px;
+        border-right: $primary-black 1px solid; 
+    }
+
+    a{
+        font-size: 1rem;
+    }
+} 
+
+
+@media (max-width: 600px) { 
+    .popupadd {
+        display: none;
+    }
+
+    .sub-header ul li:not(:last-of-type) {
+        padding: 10px;
+        border: none; 
+    }
+
+    .sub-header ul li {
+        border-top: none;
+    }
+
+}

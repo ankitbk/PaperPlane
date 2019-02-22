@@ -1,0 +1,124 @@
+
+#productgrid {
+     background-color: $background;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.filterbtn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+        a {
+            margin-left: 20px;
+        }
+        @media (max-width: 600px) {
+            text-align: center;
+        }
+}
+
+.itmContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+     max-width: 1280px;
+    margin: 0 auto;
+}
+
+.Items {
+    width: 30%;
+    margin: 10px;
+    @media (max-width: 1024px) {
+        width: 47%;
+    }
+
+    @media (max-width: 800px) {
+        width: 45%;
+    }
+    
+    @media (max-width: 600px) {
+        width: 80%;
+    }
+}
+
+.ImageContainer {
+    position: relative;
+}
+
+.itemdetails {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;        
+    background-color: rgba($color: $primary-white, $alpha: 0.7);
+    opacity: 0;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+     width: 100%;
+
+    p {
+         color: $primary-black;
+    }
+}
+
+.socialIcons {
+    display: flex;
+    padding: 10px 0;
+}
+
+.main {
+    position: relative;
+}
+
+.rightIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: $base-color;
+    color: $primary-white;
+}
+
+.userIcons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    padding: 10px;
+
+    img {
+        width: 15%;
+        border: $primary-white 1px solid;   
+        border-radius: 50%;
+        &:last-of-type {
+            margin-left: -7px;
+        }
+    }
+    p {
+        color: $primary-black;
+        display: inline;
+        font-size: 0.8rem;
+        vertical-align: text-top;
+    }
+}
+
+.lefIcon {
+    padding: 10px;
+        i {
+            color: $primary-black;
+    }
+}
